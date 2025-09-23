@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
     font-size: 100%;
     font-size: 16px;
     font-size: 1rem;
 }
+
 
 html{
     height: 100%
@@ -101,4 +104,124 @@ header nav ul li a:hover {
     padding:0.5rem 0.75rem;
     border: 1px solid #2b2bee;
     border-radius: 27px;
+}
+
+.card-container {
+    padding:1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card {
+    position: relative;
+    width:300px;
+    border-radius: 27px;
+    box-shadow: 3px 3px 5px #000;
+    min-height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    padding:0px;
+    margin:0px;
+    width:300px;
+    height:200px;
+    object-fit: cover;
+}
+.card section {
+    flex: 1;
+    padding:0.75rem;
+    line-height: 1.5;
+}
+.card .price-tag{
+    position: absolute;
+    width: 130px;
+    height: 2rem;
+    top:1rem;
+    right:1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card .card-action{
+
+}
+.card .card-action a {
+    display: block;
+    text-decoration: none;
+    background-color: #5656f1;
+    border: 1px solid #2b2bee;
+    text-shadow: 1px 1px 3px #2b2bee;
+    color:#fff;
+    font-weight: bold;
+    padding:0.5rem 0.75rem;
+    border-radius: 37px;
+    width:100%;
+    text-align: center;
+}
+
+
+
+.split-panel {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.split-panel .panel-form{
+    flex:1 0 50%;
+    padding:1rem;
+    background-color: #bbb;
+    height:100%;
+}
+
+.split-panel .panel-form form div {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+.split-panel .panel-form form label {
+    flex:30%;
+    font-weight: bold;
+}
+
+.split-panel .panel-form form input {
+    flex:70%;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    outline: 1px #000;
+}
+.split-panel .panel-form form textarea {
+    flex:70%;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    outline: 1px #000;
+}
+.split-panel .panel-form form div.top-align {
+    align-items: flex-start;
+}
+.split-panel .panel-context {
+    flex:1 0 50%;
+}
+.split-panel .panel-context img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:720px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .split-panel {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
