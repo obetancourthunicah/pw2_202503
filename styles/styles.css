@@ -169,16 +169,22 @@ header nav ul li a:hover {
     width:100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    justify-content: stretch;
 }
 
 .split-panel .panel-form{
     flex:1 0 50%;
     padding:1rem;
     background-color: #bbb;
-    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.split-panel .panel-form form {
+    flex:1;
+}
 .split-panel .panel-form form div {
     display:flex;
     flex-direction: row;
@@ -186,18 +192,18 @@ header nav ul li a:hover {
     gap:1rem;
 }
 .split-panel .panel-form form label {
-    flex:30%;
+    flex-basis:30%;
     font-weight: bold;
 }
 
 .split-panel .panel-form form input {
-    flex:70%;
+    flex-basis:70%;
     padding: 0.25rem 0.5rem;
     font-size: 1rem;
     outline: 1px #000;
 }
 .split-panel .panel-form form textarea {
-    flex:70%;
+    flex-basis:70%;
     padding: 0.25rem 0.5rem;
     font-size: 1rem;
     outline: 1px #000;
@@ -214,6 +220,44 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
+.testimonios {
+    padding:2rem;
+    display: flex;
+    gap:2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonios .testimonio {
+    max-width: 380px;
+    display: flex;
+    gap:1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding:1rem;
+    box-shadow: 3px 3px 5px #000;
+}
+
+.testimonios .testimonio img {
+    width:72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.testimonios .testimonio div {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonios .testimonio div span:nth-child(1){
+    font-style: italic;
+}
+
 @media (min-width:720px) {
     .card-container {
         flex-direction: row;
@@ -222,6 +266,5 @@ header nav ul li a:hover {
     }
     .split-panel {
         flex-direction: row-reverse;
-        align-items: center;
     }
 }

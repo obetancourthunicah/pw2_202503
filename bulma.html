@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" >
+</head>
+<body>
+     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <strong>MiMarca</strong>
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#home">Inicio</a>
+                    <a class="navbar-item" href="#pricing">Precios</a>
+                    <a class="navbar-item" href="#contact">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero is-light is-large" id="home">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-6">
+                            <h1 class="title is-1">Bienvenido a Nuestro Servicio</h1>
+                            <p class="subtitle is-4">Descubre características increíbles y aumenta tu productividad con nuestras soluciones de vanguardia. Únete a miles de clientes satisfechos hoy.</p>
+                            <div class="buttons">
+                                <button class="button is-primary is-medium">Comenzar</button>
+                                <button class="button is-medium">Saber Más</button>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <figure class="image">
+                                <picture>
+                                    <source srcset="https://picsum.photos/id/1/1290/720" media="(min-width:1025px)" />
+                                    <source srcset="https://picsum.photos/id/1/1024/640" media="(min-width:720px)" />
+                                    <img class="img-fluid rounded" src="https://picsum.photos/id/1/480/480"
+                                        alt="Imagene Responsive para Demo" />
+                                </picture>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="pricing">
+        <div class="container is-max-desktop">
+            <h2 class="title is-2 has-text-centered mb-6">Elige Tu Plan</h2>
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="card">
+                        <header class="card-header has-background-light">
+                            <p class="card-header-title is-centered">
+                                <span class="title is-4">Básico</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content has-text-centered">
+                                <p class="title is-2">$9<span class="subtitle is-5 has-text-grey">/mes</span></p>
+                                <ul class="has-text-left">
+                                    <li>✓ 5 GB Almacenamiento</li>
+                                    <li>✓ Soporte Básico</li>
+                                    <li>✓ 1 Usuario</li>
+                                    <li>✓ Integración Email</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item button is-outlined is-primary">Elegir Plan</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card has-background-primary-light">
+                        <header class="card-header has-background-primary">
+                            <p class="card-header-title is-centered has-text-white">
+                                <span class="title is-4 has-text-white">Profesional</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content has-text-centered">
+                                <p class="title is-2">$29<span class="subtitle is-5 has-text-grey">/mes</span></p>
+                                <ul class="has-text-left">
+                                    <li>✓ 50 GB Almacenamiento</li>
+                                    <li>✓ Soporte Prioritario</li>
+                                    <li>✓ 10 Usuarios</li>
+                                    <li>✓ Características Avanzadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item button is-primary">Elegir Plan</a>
+                        </footer>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <header class="card-header has-background-light">
+                            <p class="card-header-title is-centered">
+                                <span class="title is-4">Empresarial</span>
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content has-text-centered">
+                                <p class="title is-2">$99<span class="subtitle is-5 has-text-grey">/mes</span></p>
+                                <ul class="has-text-left">
+                                    <li>✓ Almacenamiento Ilimitado</li>
+                                    <li>✓ Soporte 24/7</li>
+                                    <li>✓ Usuarios Ilimitados</li>
+                                    <li>✓ Soluciones Personalizadas</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <a href="#" class="card-footer-item button is-outlined is-primary">Elegir Plan</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section has-background-light" id="contact">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Ponte en Contacto</h2>
+            <div class="box">
+                <div class="columns is-gapless">
+                    <div class="column is-6">
+                        <div class="p-5">
+                            <h3 class="title is-4 mb-5">Contáctanos</h3>
+                            <form>
+                                <div class="field">
+                                    <label class="label">Nombre Completo</label>
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Juan Pérez">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Correo Electrónico</label>
+                                    <div class="control">
+                                        <input class="input" type="email" placeholder="juan@ejemplo.com">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Número de Teléfono</label>
+                                    <div class="control">
+                                        <input class="input" type="tel" placeholder="+504 1234 5678">
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label class="label">Mensaje</label>
+                                    <div class="control">
+                                        <textarea class="textarea" rows="4" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-primary is-fullwidth">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="column is-6">
+                        <figure class="image is-square">
+                            <img src="https://picsum.photos/660/660" alt="Contacto">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer has-background-dark has-text-white">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <h5 class="title is-5 has-text-white">Sobre Nosotros</h5>
+                    <p class="is-size-7">Proporcionamos soluciones innovadoras para ayudar a las empresas a crecer y tener éxito en la era digital.</p>
+                </div>
+                <div class="column is-4">
+                    <h5 class="title is-5 has-text-white">Enlaces Rápidos</h5>
+                    <ul class="is-size-7">
+                        <li><a href="#" class="has-text-white">Inicio</a></li>
+                        <li><a href="#pricing" class="has-text-white">Precios</a></li>
+                        <li><a href="#contact" class="has-text-white">Contacto</a></li>
+                        <li><a href="#" class="has-text-white">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="column is-4">
+                    <h5 class="title is-5 has-text-white">Síguenos</h5>
+                    <p class="is-size-7 mb-3">Mantente conectado en redes sociales</p>
+                    <div class="buttons">
+                        <a href="#" class="button is-small is-text has-text-white">Facebook</a>
+                        <a href="#" class="button is-small is-text has-text-white">Twitter</a>
+                        <a href="#" class="button is-small is-text has-text-white">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="has-background-white-ter">
+            <div class="content has-text-centered is-size-7">
+                <p>&copy; 2025 MiMarca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+            });
+        });
+
+        });
+    </script>
+</body>
+</html>
